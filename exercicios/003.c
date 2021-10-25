@@ -1,15 +1,40 @@
 /*
-Faça um Programa que peça dois números e imprima a soma.
+Desenvolver um algoritmo que leia os coeficientes (a , b e c) de uma equação do segundo grau e calcule suas raízes. O programa 
+deve mostrar, quando possível, o valor das raízes calculadas e a classificação das raízes.
 */
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include<stdio.h>
+#include<math.h>
 
-int main(){
-    int n1=0, n2=0;
-    std::cout << "Digite dois numeros\n";
-    std::cin >> n1 >> n2;
-    std::cout << "A soma dos numeros e: " << n1+n2;
+int main()
+{
+float a, b, c, delta, X1, X2;
 
-    return 0;
+scanf("%f",&a);
+scanf("%f",&b);
+scanf("%f",&c);
+
+delta = (pow(b,2) - 4 * a * c);
+X1 = (-b + sqrt(delta))/(2 * a);
+X2 = (-b - sqrt(delta))/ (2 * a);
+
+if (delta == 0)
+{
+printf("RAIZ UNICA\n");
+printf("X1 = %.2f\n",X1);
+}
+
+else if (delta < 0 )
+{
+printf("RAIZES IMAGINARIAS\n");
+}
+
+else if (delta > 0 )
+{
+printf("RAIZES DISTINTAS\n");
+printf("X1 = %.2f\n",X1);
+printf("X2 = %.2f\n",X2);
+}
+
+return 0;
+
 }
