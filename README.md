@@ -13,12 +13,11 @@ Resolução em C dos exercícios de Lógica de Programação
 
 #### [Exercicio 001](exercicios/001.c)
 
-Faça um Programa que mostre a mensagem "Alo mundo" na tela.
+Desenvolver um algoritmo que leia um número inteiro e verifique se o número é divisível por 5 e por 3 ao mesmo tempo.
 
 #### [Exercicio 002](exercicios/002.c)
 
-Faça um Programa que peça um número e então mostre a mensagem O número
-informado foi [número].
+Dados quatro números distintos, desenvolver um algoritmo que determine e imprima a soma dos três menores.
 
 #### [Exercicio 003](exercicios/003.c)
 
