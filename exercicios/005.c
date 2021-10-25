@@ -1,16 +1,85 @@
 /*
-Faça um Programa que converta metros para centímetros.
+Desenvolver um algoritmo para pedir um mês e ano e exibir o número de dias do mês / ano digitados.
 */
-#include <iostream>
-#include <vector>
-#include <algorithm>
+include<stdio.h>
+#include<math.h>
+#include<string.h>
+int main()
+{
+int ano, anobissexto, mesfevereirobissexto;
+char mes[15];
 
-int main(){
-    float metros, centimetros;
-    std::cout << "Digite o valor em metros para converter em centimetros\n";
-    std::cin >> metros;
-    
-    std::cout << "A em centimetros e: " << metros*100 << "cm";
+scanf("%s",mes);
+scanf("%d",&ano);
 
-    return 0;
+if (ano % 4==0 ) {
+anobissexto = 366;
+mesfevereirobissexto = 29;
+}
+
+else {
+anobissexto = 365;
+mesfevereirobissexto = 28;
+}
+
+if (strcmp(mes,"JANEIRO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"FEVEREIRO") == 0){
+printf("DIAS = %d\n",mesfevereirobissexto);
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"MARCO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"ABRIL") == 0){
+printf("DIAS = 30\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"MAIO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"JUNHO") == 0){
+printf("DIAS = 30\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"JULHO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"AGOSTO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"SETEMBRO") == 0){
+printf("DIAS = 30\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+else if (strcmp(mes,"OUTUBRO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+else if (strcmp(mes,"NOVEMBRO") == 0){
+printf("DIAS = 30\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+else if (strcmp(mes,"DEZEMBRO") == 0){
+printf("DIAS = 31\n");
+printf("DIAS NO ANO = %d\n",anobissexto);
+}
+
+return 0;	
+
 }
