@@ -1,30 +1,19 @@
 /*
-Faça um Programa que peça 2 números inteiros e um número real.
-Calcule e mostre:
-    o produto do dobro do primeiro com metade do segundo.
-    a soma do triplo do primeiro com o terceiro.
-    o terceiro elevado ao cubo.
+Faça um algorítimo que receba valores inteiros de uma matriz 5×2 e preencha um vetor inteiro de
+tamanho 10. Imprima o vetor preenchido.
 */
-#include <stdio.h>
-#include <ctype.h>
-#include <cmath>
-#include <cstring>
-int main()
-{
-    int num1, num2;
-    float num3, a, b, c;
-    printf("Digite um numero inteiro: ");
-    scanf("%i", &num1);
-    printf("Digite outro numero inteiro: ");
-    getchar();
-    scanf("%i", &num2);
-    printf("Digite um numero real: ");
-    getchar();
-    scanf("%f", &num3);
+#include<math.h>
+#include<stdio.h>
+#include<string.h>
 
-    a = (num1 * 2) * (num2 / 2.0);
-    b = (num1 * 3) + num3;
-    c = pow(num3, 3);
-    printf("a - %f\nb - %f\nc - %f", a, b, c);
-    return 0;
+int main(){
+
+int vetor[9], i;
+
+for (i = 0; i < 10; i++){
+
+scanf("%d",&vetor[i]);
+printf("%d\n",vetor[i]);
+}
+return 0;
 }
