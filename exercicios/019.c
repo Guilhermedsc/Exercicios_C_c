@@ -1,26 +1,42 @@
 /*
-Faça um Programa que peça dois números e imprima o maior deles.
+Faça um programa em Linguagem C que lê uma matriz de 3 x 3 elementos usando um comando for, multiplica cada elemento por 5 e imprime o resultado.
 */
-#include <stdio.h>
-#include <ctype.h>
-#include <cmath>
-#include <cstring>
+#include<stdio.h> 
 int main()
-{
-    int num1, num2;
-    printf("Digite um numero inteiro: ");
-    scanf("%i", &num1);
-    printf("Digite outro numero inteiro: ");
-    getchar();
-    scanf("%i", &num2);
 
-    if (num1 > num2)
+ {    
+  int i, j, m[3][3];
+       
+/*vamos digitar os elementos para que sejam salvos na memória*/    
+ for(i=0;i<3;i++)        
+  for(j=0;j<3;j++)
+    {           
+      printf("Elemento[%d][%d]= ",i,j);           
+      scanf("%d",&m[i][j]);         
+    } 
+    
+/*O trecho abaixo, vai exibir os valores originais que digitamos*/  
+  printf("\n  Valores originais da matriz\n");     
+  for(i=0;i<3;i++)
+   {         
+     for(j=0;j<3;j++)             
+       printf("%d ",m[i][j]);         
+       printf("\n");     
+   }     
+  /*Abaixo, vamos multiplicar os valores da matriz por 5 */    
+  for(i=0;i<3;i++)         
+  for(j=0;j<3;j++)
     {
-        printf("%i", num1);
-    }
-    else
-    {
-        printf("%i", num2);
-    }
-    return 0;
+      m[i][j]=m[i][j]*5;
+    }             
+      
+   /*Agora, vamos exibir os valores após a multiplicação */     
+   printf("\n Valores apos a multiplicacao por 5 \n");     
+   for(i=0;i<3;i++)
+   {         
+      for(j=0;j<3;j++)             
+        printf("%d ",m[i][j]);         
+        printf("\n");     
+    }       
+  return 0; 
 }
