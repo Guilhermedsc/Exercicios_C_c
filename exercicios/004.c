@@ -1,16 +1,35 @@
 /*
-Faça um Programa que peça as 4 notas bimestrais e mostre a média.
+Desenvolver um algoritmo para ler um número “x” e calcular e imprimir o valor de “y” de acordo com as condições abaixo:
+y = x , se x < 1;
+y = 0 , se x = 1;
+y = x² , se x > 1;
 */
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include<stdio.h>
+#include<math.h>
 
-int main(){
-    float nota1, nota2, nota3, nota4, media;
-    std::cout << "Digite as 4 notas\n";
-    std::cin >> nota1 >> nota2 >> nota3 >> nota4;
-    
-    std::cout << "A media das notas e: " << (nota1 + nota2 + nota3 + nota4)/4;
+int main()
+{
+int x, y;
 
-    return 0;
+scanf("%d",&x);
+
+if(x < 1)
+{
+y = x;
+printf("Y = %d\n",y);
+}	
+
+else if(x == 1)
+{
+y = 0;
+printf("Y = %d\n",y);
+}
+
+else if(x > 1)
+{
+y = pow(x,2);
+printf("Y = %d\n",y);
+}
+
+return 0;
 }
