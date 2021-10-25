@@ -1,30 +1,31 @@
 /*
-João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar
-o rendimento diário de seu trabalho.
-
-Toda vez que ele traz um peso de peixes maior que o estabelecido pelo
-regulamento de pesca do estado de São Paulo (50 quilos) deve pagar uma multa
-de R$ 4,00 por quilo excedente.
-
-João precisa que você faça um programa que leia a variável peso
-(peso de peixes) e calcule o excesso.
-
-Gravar na variável excesso a quantidade de quilos além do limite
-e na variável multa o valor da multa que João deverá pagar.
-Imprima os dados do programa com as mensagens adequadas.
+Faça um programa que receba os valores de uma matriz de ordem 3 e imprimia sua diagonal principal de trás para frente.
 */
-#include <stdio.h>
-#include <ctype.h>
-#include <cmath>
-#include <cstring>
-int main()
-{
-    float peso, excesso, multa;
-    printf("Digite o peso em kg da pescaria de hoje: ");
-    scanf("%f", &peso);
-    excesso = peso - 50;
-    multa = excesso * 4;
-    printf("Você pescou %.2fkg em excesso, e terá que pagar R$%.2f de multa.",
-           excesso, multa);
-    return 0;
+#include<math.h>
+#include<stdio.h>
+#include<string.h>
+
+int main(void){
+
+	int matriz[3][3], linha = 0, coluna = 0;
+
+	for(linha = 0; linha < 3; linha++){
+
+		for (coluna = 0; coluna < 3; coluna++){
+
+			scanf("%d",&matriz[linha][coluna]);
+		}
+
+	}
+
+	for (linha = 2; linha >= 0; linha--){
+
+		for(coluna = 2; coluna >=0; coluna--){
+			if ( linha == coluna){
+					printf("%d\n",matriz[linha][coluna]);
+			}
+		}
+	}	
+
+	return 0;
 }
