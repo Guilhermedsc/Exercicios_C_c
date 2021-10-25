@@ -1,21 +1,16 @@
 # Exercícios de Lógica de Programação em C++
 
 ## Descrição
-Resolução em C++ dos exercícios de Lógica de Programação e Algoritmos da [lista de exercícios da Wiki da Python Brasil](https://wiki.python.org.br/ListaDeExercicios).
+Resolução em C dos exercícios de Lógica de Programação
 
 ## Conteúdo
 1. [Exercícios de Lógica de Programação em C++](#exercícios-de-lógica-de-programação-em-c)
    1. [Descrição](#descrição)
    2. [Conteúdo](#conteúdo)
    3. [Enunciados](#enunciados)
-      1. [Estruturas sequenciais](#estruturas-sequenciais)
-      2. [Estruturas de decisão](#estruturas-de-decisão)
-      3. [Estruturas de repetição](#estruturas-de-repetição)
-      4. [Listas](#listas)
-
 
 ## Enunciados
-### Estruturas sequenciais
+
 #### [Exercicio 001](exercicios/001.c)
 
 Faça um Programa que mostre a mensagem "Alo mundo" na tela.
