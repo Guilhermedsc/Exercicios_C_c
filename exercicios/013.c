@@ -1,23 +1,40 @@
 /*
-Tendo como dado de entrada a altura (h) de uma pessoa,
-construa um algoritmo que calcule seu peso ideal,
-utilizando as seguintes fórmulas:
-    Para homens: (72.7*h) - 58
-    Para mulheres: (62.1*h) - 44.7
+Fazer um algoritmo que:
+Preencha um vetor com X números inteiros, em que o último número lido seja 999 (o último  número não fará parte do vetor). E  imprima o vetor na ordem inversa.
 */
-#include <stdio.h>
-#include <ctype.h>
-#include <cmath>
-#include <cstring>
-int main()
-{
-    float altura, pesoIdealH, pesoIdealM;
-    printf("Digite sua altura em m: ");
-    scanf("%f", &altura);
-    pesoIdealH = (72.7 * altura) - 58;
-    pesoIdealM = (62.1 * altura) - 44.7;
-    printf(
-        "O seu peso ideal eh:\n%.2fkg se voce for homem\n%.2fkg se voce for mulher",
-        pesoIdealH, pesoIdealM);
-    return 0;
+#include<math.h>
+#include<stdio.h>
+#include<string.h>
+
+int main(void){
+
+	int contador = 0, numero, vetor[contador];
+
+	scanf("%d",&numero);
+
+	while (numero != 999){
+
+		if (contador == 0){
+		vetor[contador] = numero;
+		contador++;
+		}	
+
+			else{
+			vetor[contador] = numero;
+			contador++;
+			}
+
+	scanf("%d",&numero);		
+	}
+
+	if (numero == 999){
+		contador--;
+		}
+
+	while ( contador >= 0 ){
+
+		printf("%d\n",vetor[contador]);
+		contador--;
+	}
+	return 0;
 }
