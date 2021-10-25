@@ -1,16 +1,33 @@
 /*
-Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
+Desenvolver um algoritmo para ler o número de uma sala de aula, sua capacidade e o total de alunos matriculados na mesma e imprimir uma linha mostrando o número 
+da sala, sua capacidade, o número de cadeiras ocupadas e sua disponibilidade indicando se a sala está lotada ou não.
 */
-#include <stdio.h>
-#include <ctype.h>
-#include <cmath>
-#include <cstring>
+#include<stdio.h>
+#include<math.h>
+
 int main()
 {
-    float raio, area;
-    printf("Digite o valor do raio: ");
-    scanf("%f", &raio);
-    area = M_PI * pow(raio, 2);
-    printf("A area eh %f", area);
-    return 0;
+int numerosala, capacidade, alunosmatriculados;
+
+scanf("%d",&numerosala);
+scanf("%d",&capacidade);
+scanf("%d",&alunosmatriculados);
+
+if (alunosmatriculados >= capacidade)
+{
+printf("SALA = %d\n",numerosala);
+printf("CAPACIDADE = %d\n",capacidade);
+printf("CADEIRAS OCUPADAS = %d\n",alunosmatriculados);
+printf("SALA LOTADA\n");
+}
+
+else if (alunosmatriculados < capacidade)
+{
+printf("SALA = %d\n",numerosala);
+printf("CAPACIDADE = %d\n",capacidade);
+printf("CADEIRAS OCUPADAS = %d\n",alunosmatriculados);
+printf("SALA NAO LOTADA\n");
+}
+
+return 0;
 }
