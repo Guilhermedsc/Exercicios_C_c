@@ -8,9 +8,12 @@ Resolução em C dos exercícios de Lógica de Programação
    1. [Descrição](#descrição)
    2. [Conteúdo](#conteúdo)
    3. [Enunciados](#enunciados)
+       1. [Estruturas de decisão](#estruturas-decisão)
+       2. [Vetores](#vetores)
+       3. [Matrizes](#matrizes)
 
 ## Enunciados
-
+### Estruturas de decisão
 #### [Exercicio 001](exercicios/001.c)
 
 Desenvolver um algoritmo que leia um número inteiro e verifique se o número é divisível por 5 e por 3 ao mesmo tempo.
@@ -67,8 +70,7 @@ Um certo aço é classificado de acordo com o resultado de três testes abaixo, 
 2. Dureza Rockwell maior do que 50;
 3. Resistência á tração maior do que 80.000 psi;
 
-## Vetor
-
+### Vetores
 #### [Exercicio 011](exercicios/011.c)
 
 Faça um algorítimo que receba valores inteiros de uma matriz 5×2 e preencha um vetor inteiro de
@@ -93,7 +95,7 @@ Faça um programa que receba os valores de uma matriz de ordem 3 e imprimia sua 
 Fazer um algoritmo que:
 Leia um vetor contendo 10 números, que correspondem a matrículas de alunos. Ler 3 matrículas e imprima uma mensagem informando se eles estão ou não presentes no vetor.
 
-## Matriz
+### Matrizes
 
 #### [Exercicio 016](exercicios/016.c)
 
